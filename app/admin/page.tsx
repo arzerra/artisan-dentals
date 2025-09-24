@@ -4,7 +4,7 @@ import type { User } from "@supabase/supabase-js";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
 import LogoutButton from "../components/LogoutButton";
-import AddPatient from "./add-patient/page";
+
 
 export default function AdminPage() {
   const router = useRouter();
