@@ -75,6 +75,46 @@ export default function AdminPage() {
       <div className="flex"><LogoutButton /></div>
     </div>
     <AddPatient/>
+    <div className="flex justify-between p-4">
+      <div className="flex">Welcome</div>
+      <div className="flex"><LogoutButton /></div>
+    </div>
+    <AddPatient/>
+    <div className="flex justify-between p-4">
+      <div className="flex">Welcome</div>
+      <div className="flex"><LogoutButton /></div>
+    </div>
+    <AddPatient/>
+    <div className="flex justify-between p-4">
+      <div className="flex">Welcome</div>
+      <div className="flex"><LogoutButton /></div>
+    </div>
+    <AddPatient/>
+    <div className="flex justify-between p-4">
+      <div className="flex">Welcome</div>
+      <div className="flex"><LogoutButton /></div>
+    </div>
+    <AddPatient/>
+    <div className="flex justify-between p-4">
+      <div className="flex">Welcome</div>
+      <div className="flex"><LogoutButton /></div>
+    </div>
+    <AddPatient/>
+    <div className="flex justify-between p-4">
+      <div className="flex">Welcome</div>
+      <div className="flex"><LogoutButton /></div>
+    </div>
+    <AddPatient/>
+    <div className="flex justify-between p-4">
+      <div className="flex">Welcome</div>
+      <div className="flex"><LogoutButton /></div>
+    </div>
+    <AddPatient/>
+    <div className="flex justify-between p-4">
+      <div className="flex">Welcome</div>
+      <div className="flex"><LogoutButton /></div>
+    </div>
+    <AddPatient/>
     </>
   );
 }
