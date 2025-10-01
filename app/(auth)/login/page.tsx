@@ -15,7 +15,8 @@ export default function Login() {
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  const login = async () => {
+  const login = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
     setError("");
     const { error } = await supabase.auth.signInWithPassword({
       email: form.email,
@@ -38,6 +39,7 @@ export default function Login() {
   return (
     <div className="flex flex-col w-[400px] mx-auto mt-20">
       <h1 className="text-xl mb-4">Admin Login</h1>
+      <form onSubmit={login} className="flex flex-col">
       <input
         type="text"
         name="email"
@@ -56,11 +58,12 @@ export default function Login() {
       />
       {error && <p className="text-red-500 mb-2">{error}</p>}
       <button
-        onClick={login}
+        type="submit" 
         className="bg-blue-600 text-white p-2 rounded hover:bg-blue-700 cursor-pointer"
       >
         Login
       </button>
+      </form>
       <Link href="/">Back</Link>
     </div>
   );
